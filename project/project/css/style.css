@@ -33,8 +33,8 @@ body {
     font-weight: 400;
   }
   .page-header-list {
-    padding: 0 0 0 30px;
-    margin: 0 0 0 0;
+    padding: 0;
+    margin: 0;
     font-size: 20px;
     line-height: 36px;
     font-weight: 400;
@@ -42,6 +42,8 @@ body {
   }
   .page-header-list-item {
     position: relative;
+    padding: 0 0 0 30px;
+    box-sizing: border-box;
   }
   .page-header-list-item:before {
     content: "";
@@ -50,7 +52,7 @@ body {
     height: 19px;
     position: absolute;
     top: 7px;
-    left: -30px;
+    left: 0;
     background-image: url(../img/check.png);
     background-size: cover;
   }
@@ -63,6 +65,7 @@ body {
   }
   .about {
     padding: 50px;
+    box-sizing: border-box;
   }
   .about:after {
     display: block;
@@ -81,8 +84,12 @@ body {
     color: #445161;
   }
   .about-text {
+    margin: 0 0 20px 0;
     font-size: 16px;
     line-height: 24px;
+  }
+  .about-text:last-child {
+    margin: 0;
   }
   .about-video {
     width: 430px;
@@ -93,6 +100,7 @@ body {
   .dignity {
     padding: 50px;
     background-color:#F5F5F5;
+    box-sizing: border-box;
   }
   .dignity-header {
     text-align: center;
@@ -104,13 +112,16 @@ body {
   .dignity-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
-    padding: 0 0 0 0;
-    margin: 0 0 0 50px;
+    padding: 0;
+    margin: 0;
   }
   .dignity-list-item {
-    margin-top: 29px;
-    width: 529px;
+    margin: 29px 0 0 0;
+    padding: 0 0 0 40px;
+    box-sizing: border-box;
+    width: 49%;
     position: relative;
     font-size: 16px;
     line-height: 24px;
@@ -122,19 +133,19 @@ body {
     height: 32px;
     position: absolute;
     top: 6px;
-    left: -35px;
+    left: 0px;
     background-image: url(../img/pluss.png);
     background-size: cover;
   }
   .dignity-list-item:nth-child(even) {
-    margin-left: 64px;
+    margin-left: 0px;
   }
   .screenshots {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 50px 30px 50px;
     box-sizing: border-box;
   }
   .screenshots-title {
