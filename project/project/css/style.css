@@ -437,8 +437,20 @@ input[type="submit"] {
   align-self: center;
 }
 input[type="submit"]:hover {
-  background-color: #445162;
-  color: #fff;
+  background-color: #ccc;
+  border-color: #fff;
+}
+input[type="name"]:focus {
+  outline: none;
+  border-color: lightseagreen;
+}
+input[type="email"]:focus {
+  outline: none;
+  border-color: lightseagreen;
+}
+textarea:focus {
+  outline: none;
+  border-color: lightseagreen;
 }
 fieldset {
   border: 0 none;
@@ -460,6 +472,9 @@ fieldset {
   margin: 0 0 20px 0;
   position: relative;
   padding: 0 0 0 30px;
+}
+.contact-link:hover {
+  color: lightseagreen;
 }
 .contact-list-item:nth-child(1)::before {
   content: "";
@@ -504,6 +519,10 @@ fieldset {
   left: 0px;
   background-image: url(../img/phone.png);
   background-size: 100%;
+}
+.contact-link {
+  text-decoration: none;
+  color: #fff;
 }
 .social {
   display: flex;
