@@ -383,15 +383,16 @@ color: #445161;
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
-  margin: 0 auto;
+  margin: 0 0 20px 0;
   width: 100%;
 }
 .form {
   width: 500px;
   border: none;
-  margin: 0 auto;
+  margin: 0 45px 0 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 input[type="name"] {
   padding: 10px;
@@ -421,6 +422,8 @@ textarea {
   font-weight: 400;
   color: #445162;
   border-radius: 5px;
+  font-family: Arial;
+  resize: none;
 }
 input[type="submit"] {
   padding: 10px;
@@ -433,6 +436,110 @@ input[type="submit"] {
   border-radius: 5px;
   align-self: center;
 }
+input[type="submit"]:hover {
+  background-color: #445162;
+  color: #fff;
+}
 fieldset {
   border: 0 none;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-list {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+}
+.contact-list-item {
+  margin: 0 0 20px 0;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.contact-list-item:nth-child(1)::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 26px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  background-image: url(../img/skype.png);
+  background-size: 100%;
+}
+.contact-list-item:nth-child(2)::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  background-image: url(../img/icq.png);
+  background-size: 100%;
+}
+.contact-list-item:nth-child(3)::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  background-image: url(../img/email.png);
+  background-size: 100%;
+}
+.contact-list-item:nth-child(4)::before {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 26px;
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  background-image: url(../img/phone.png);
+  background-size: 100%;
+}
+.social {
+  display: flex;
+  width: 240px;
+  padding: 15px 0 0 0;
+}
+.social-item {
+  display: block;
+  width: 48px;
+  height: 42px;
+  background-image: url(../img/sprite.png);
+}
+.social-item:nth-child(1) {
+  background-position: 0 0;
+}
+.social-item:nth-child(2) {
+  background-position: -48px 0;
+}
+
+.social-item:nth-child(3) {
+  background-position: -96px 0;
+}
+.social-item:nth-child(4) {
+  background-position: -144px 0;
+}
+.social-item:nth-child(5) {
+  background-position: -192px 0px;
+}
+.copyright {
+  height: 26px;
+  width: 100%;
+  background-color: #fff;
+  color: #445162;
+  text-align: center;
+}
+.copyright-text {
+  font-weight: bold;
+  margin: 10px 0 0 0;
 }
