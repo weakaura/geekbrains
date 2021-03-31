@@ -1095,3 +1095,100 @@ color: #555555;
 .footer-bottom-colored {
   color: #959595;
 }
+
+#menu {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  body {
+    width: 100%;
+    }
+  .header {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header-top {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    position: relative;
+  }
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    margin: auto;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  label {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image:  url('../img/burger.png');
+    background-size: 100%;
+  }
+  
+  .navigation-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    height: 0;
+    width: 0;
+    flex-direction: column;
+    padding: 0;
+  }
+  
+  .navigation-list li {
+    min-height: 20px;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 2px;
+  }
+  
+  .navigation-list li a {
+    width: 100%;
+  }
+  
+  
+  input[type="checkbox"]:checked ~ .navigation-list {
+    visibility: visible;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .header-bottom {
+    display: none;
+  }
+  .pagination {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .features-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  }
