@@ -32,7 +32,7 @@ body {
     background-size: cover;
     background-position: center center;
     color: #ffffff;
-    min-height: 1024px;
+    padding: 0 0 25px 0;
 
 }
 .header-top {
@@ -1121,21 +1121,15 @@ color: #555555;
   }
   .header-top {
     width: 100%;
-    /* min-height: 0; */
     padding: 20px;
     margin: 0;
-    position: relative;
     box-sizing: border-box;
   }
   .navigation {
     display: flex;
     flex-wrap: wrap;
     width: 20%;
-    margin: auto;
-    position: absolute;
-    top: 20px;
-    right: 0px;
-  }
+ }
   .nav-buttons {
     display: none;
   }
